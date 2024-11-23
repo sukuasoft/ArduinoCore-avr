@@ -103,6 +103,11 @@ unsigned long micros() {
 	return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
 }
 
+void yield(void) {
+	// Empty
+}
+
+
 void delay(unsigned long ms)
 {
 	uint32_t start = micros();
